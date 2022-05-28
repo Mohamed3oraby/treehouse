@@ -1,4 +1,4 @@
-first_name = "Mohamed"
+first_name = input("What's your first name? ")
 
 print(first_name)
 print("Hello, ", first_name)
