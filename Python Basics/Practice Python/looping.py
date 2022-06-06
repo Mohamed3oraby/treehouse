@@ -7,7 +7,6 @@ answer = input("{}, do you understand python while loops? \nEnter (yes or no):  
 while answer.lower() != "yes" :
     print("With the while loop we can execute a set of statements as long as a condition is true.")
     answer = input("{}, do you understand python while loops? \nEnter (yes or no):  ".format(name))
-
 else:
     print("Nice Job {}".format(name))
 
