@@ -5,3 +5,5 @@ books = [
     "Python for Kids: A Playful Introduction To Programming - Jason R. Briggs",
     "Hello Web App: Learn How to Build a Web App - Tracy Osborn",
 ]
+
+print("Suggested gift: {}".format(books[0]))
