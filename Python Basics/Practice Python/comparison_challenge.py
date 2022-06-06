@@ -2,11 +2,12 @@ name = input("Please enter your name: ")
 number = input("Please enter a number: ")
 
 # TODO: Make sure the number is an integer
-
+number = int(number)
 
 # TODO: Print out the User's name and the number entered,
 # making sure the two statements are on separate lines of output.
-
+print("Hello {}, welcome to FizzBuzz game!".format(name))
+print("The number you entered is {}".format(number))
 
 # TODO: Compare the number the user gave with the different
 # FizzBuzz conditions. 
