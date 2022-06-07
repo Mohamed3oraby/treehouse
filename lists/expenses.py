@@ -3,3 +3,9 @@ travel_expenses = [
     [24.75, 5.50, 15.00, 22.00, 8.00],
     [2.75, 5.50, 0.00, 29.00, 5.00],
 ]
+
+print("Travel Expenses: ")
+week_number = 1
+for week in travel_expenses:
+    print("* Week number {}: ${}".format(week_number, sum(week)))
+    week_number += 1
