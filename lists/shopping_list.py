@@ -1,8 +1,11 @@
 # Create a new empty list named shopping_list
-
+shopping_list = []
 
 # Create function named add_to_list that declares a parameter named item
+def add_to_list(item):
     # Add item to the list. 
+    shopping_list.append(item)
+
 
 def show_help():
     print("What should we pick up at the store?")
@@ -21,4 +24,5 @@ while True:
         show_help()
         continue
 
-        # Call that list with new_item as an argument 
+    # Call that list with new_item as an argument 
+    add_to_list(new_item)
