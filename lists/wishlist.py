@@ -1,3 +1,15 @@
+from typing import ItemsView
+
+
+def display_wishlist(display_name, wishes):
+    items = wishes.copy()
+    print(display_name + ":")
+    suggested_gift = items.pop(0)
+    print("==========>", suggested_gift, "<==========")
+    for item in items:
+        print("*" + item)
+    print()
+
 books = [
     "Automate the Boring Stuff with Python: Practical Programming for Total Beginners - Al Sweigart",
     "Python for Data Analysis - Wes McKinney",
@@ -14,9 +26,7 @@ video_games = [
 ]
 
 
-print("Suggested gift: {}".format(books[0]))
-print("Books:")
-for book in books:
-    print("*" + book)
 
 
+display_wishlist("Books", books)
+display_wishlist("Video Games", video_games)
