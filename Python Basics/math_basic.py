@@ -15,6 +15,9 @@ for grade in test_grades:
     if grade >= 70:
         passed += 1
 
+total_grades = len(test_grades)
+percentage_passed = round(passed / total_grades * 100)
+
 essay_grades = [93, 97, 84, 91, 87, 68, 63, 72, 75, 89]
 essay_grades.sort()
 print(essay_grades)
@@ -35,3 +38,6 @@ print(f"The most often seen essay grade is: {essay_mode}")
 print(f"The average test grade is: {test_average}")
 print(f"The average essay grade is: {essay_average}")
 print(f"The number of students who passed: {passed}")
+print(f"The number of students who did not pass: {total_grades - passed}")
+print(f"The percentage of students who passed: {percentage_passed}%")
+print(f"The percentage of students who did not pass: {100 - percentage_passed}%")
